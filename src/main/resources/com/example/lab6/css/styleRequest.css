@@ -1,0 +1,32 @@
+.root{
+    -fx-background-color: rebeccapurple;
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-color: linear-gradient(to right,darkred, indianred);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 3 );
+    -fx-alignment: "TOP_LEFT";
+}
+.label {
+    -fx-font-size: 14px;
+    /*-fx-font-weight:bold;*/
+    -fx-text-fill: darkslategrey;
+    -fx-background-color: palevioletred;
+    -fx-effect: dropshadow( gaussian , black, 0,0,0,3 );
+}
+.table-view {
+    -fx-background-color: #d9a957;
+    -fx-color-label-visible: red;
+}
+.split-pane{
+    -fx-background-color: rosybrown;
+}
+.table-row-cell:selected {
+    -fx-background-color: linear-gradient(to left,palevioletred,indianred,red,darkred);
+}
+.table-row-cell:selected .text {
+    -fx-fill: #ffffff;
+}

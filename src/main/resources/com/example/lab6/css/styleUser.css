@@ -1,0 +1,40 @@
+.root{
+    -fx-background-color: cadetblue;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+    -fx-background-color: linear-gradient(to right,darkslategrey, darkgray);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 3 );
+}
+.label {
+    -fx-font-size: 14px;
+    /*-fx-font-weight:bold;*/
+    -fx-text-fill: darkslategrey;
+    -fx-background-color: darkgray;
+    -fx-border-color: black;
+    //-fx-effect: dropshadow( gaussian , black, 0,0,0,3 );
+}
+.table-view {
+    -fx-background-color: #d9a957;
+    -fx-color-label-visible: red;
+}
+.split-pane{
+    -fx-background-color: darkslategrey;
+}
+.table-row-cell:selected {
+    -fx-background-color: linear-gradient(to left,white,gray,darkgrey,black);
+
+}
+.table-row-cell:selected .text {
+    -fx-fill: #ffffff;
+}
+.text-field{
+    -fx-background-color: darkslategrey;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}

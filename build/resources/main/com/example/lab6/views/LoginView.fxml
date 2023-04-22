@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane stylesheets="@../css/styleLogin.css" fx:controller="com.example.lab6.controller.LoginController" xmlns:fx="http://javafx.com/fxml"  styleClass="root" prefHeight="300.0" prefWidth="300.0">
+    <children>
+                <Text id="welcome-text" text="Welcome!" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0"/>
+                <Label text="User Name:" AnchorPane.topAnchor="75.0" AnchorPane.leftAnchor="15.0" prefWidth="175.0" prefHeight="5.0"/>
+                <TextField fx:id="usernameField" AnchorPane.topAnchor="75.0" AnchorPane.leftAnchor="105.0"/>
+                <Label text="Password:" AnchorPane.topAnchor="120.0" AnchorPane.leftAnchor="15.0" prefWidth="175.0" />
+                <PasswordField fx:id="passwordField" AnchorPane.topAnchor="120.0" AnchorPane.leftAnchor="105.0" onKeyReleased="#handleVisibleIncorrect"/>
+                <Button text="Sign In" onAction="#handleLoginButton" AnchorPane.topAnchor="175.0" AnchorPane.leftAnchor="65.0"/>
+                <Button text="Sign Up" onAction="#handleSignUpButton" AnchorPane.topAnchor="175.0" AnchorPane.leftAnchor="155.0"/>
+                <Label fx:id="incorect"  AnchorPane.topAnchor="200.0" AnchorPane.leftAnchor="90.0" visible="false"/>
+
+    </children>
+
+</AnchorPane>

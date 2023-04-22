@@ -1,0 +1,34 @@
+root {
+    display: block;
+}
+.root {
+    -fx-background-color: darkslategrey;
+}
+.label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #12345;
+    -fx-effect: dropshadow( gaussian , darkcyan , 0,0,0,1 );
+}
+#welcome-text {
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: darkcyan;
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to right,darkslategrey, darkgray);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+
+
+
+
+
+
+
+
+

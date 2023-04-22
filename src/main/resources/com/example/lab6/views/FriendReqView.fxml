@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane stylesheets="@../css/styleRequest.css" fx:controller="com.example.lab6.controller.FriendRequestController" xmlns:fx="http://javafx.com/fxml" styleClass="root">
+    <children>
+        <SplitPane>
+            <items>
+        <TableView fx:id="tableFriendReqView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="tableColumnNameReq" prefWidth="75.0" text="Nume" />
+                <TableColumn fx:id="tableColumnPasswordReq" prefWidth="75.0" text="Parola" />
+                <TableColumn fx:id="tableColumnFriendsDate" prefWidth="20.0" text="Data trimiterii"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+                <AnchorPane>
+                    <children>
+                        <SplitPane>
+                            <items>
+                                <VBox>
+                                    <Button fx:id="btnFriendReq" mnemonicParsing="false" onAction="#handleAcceptRequest" text="Accept friend request" AnchorPane.leftAnchor="0.0" alignment="TOP_RIGHT"/>
+                                    <Button fx:id="btnFriendReqDel" mnemonicParsing="false" onAction="#handleDeleteRequest" text="Remove friend request" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="15.0" alignment="TOP_RIGHT"/>
+                                </VBox>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+        </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

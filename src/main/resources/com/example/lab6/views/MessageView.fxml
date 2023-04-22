@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.lab6.controller.MessageController"
+            stylesheets="@../css/styleMessage.css"
+            prefHeight="700.0" prefWidth="450.0">
+    <children>
+        <SplitPane prefHeight="700.0">
+            <items>
+                <VBox prefHeight="750.0" prefWidth="700.0">
+                    <AnchorPane AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="330.0" prefWidth="10" AnchorPane.topAnchor="10.0">
+                        <children>
+                            <Label fx:id="labelTime" visible="false" alignment="CENTER"/>
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane AnchorPane.leftAnchor="450.0">
+                        <children>
+                            <SplitPane fx:id="PanelMessagesUserCurent" AnchorPane.rightAnchor="315.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                <items>
+                                    <ListView fx:id="labelMessUserTalkingTo"/>
+                                </items>
+                            </SplitPane>
+                            <SplitPane fx:id="PanelMessagesUserTalkingTo" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                            <items>
+                                <ListView fx:id="labelMessUserCurent"/>
+                            </items>
+                        </SplitPane>
+                        </children>
+                    </AnchorPane>
+                    <HBox AnchorPane.bottomAnchor="50.0" prefHeight="40.0">
+                        <TextField fx:id="typeField" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" text="Type message"/>
+                        <Button fx:id="btnSend" prefHeight="25.0" text="Send"/>
+                    </HBox>
+                </VBox>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
